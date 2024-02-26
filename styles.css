@@ -1,0 +1,155 @@
+/* styles.css */
+
+/* Index page changes */
+header {
+    background-color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-right: auto; 
+}
+
+header h1 {
+    margin-left: auto; 
+    color: white; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #333;
+}
+
+nav a {
+    padding: 10px 20px; 
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-us {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+.shop-now-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: flex-start;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.shop-now-button:hover {
+    background-color: #45a049; 
+}
+
+.customer-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+#about-us,
+#mission-statement,
+#vision-statement {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+#about-us h1,
+#mission-statement h2,
+#vision-statement h2 {
+    color: #333; 
+}
+
+
+
+/* Login Page Changes Stuff */
+
+
+main.login-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+form.login-form label {
+    display: block;
+    margin: 10px;
+}
+
+form.login-form input {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+form.login-form input#username::placeholder {
+    content: "Type in username"; 
+    color: #999; 
+}
+
+form.login-form input#password::placeholder {
+    content: "Type in password"; 
+    color: #999;
+}
+
+
+form.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+
+form.login-form button:hover {
+    background-color: #45A049; 
+}
+
+p a.signup-link {
+    color: #007BFF;
+    margin: 10px;
+    text-decoration: none; 
+}
+
+p a.signup-link:hover {
+    text-decoration: underline; 
+    color: #0056b3;
+}
