@@ -206,7 +206,9 @@ button:hover {
     background-color: #45A049;
 }
 
-
+.footer {
+    text-align: center;
+}
 
 /* Contacts page */
 
