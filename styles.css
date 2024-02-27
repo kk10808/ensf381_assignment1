@@ -1,5 +1,5 @@
 /* styles.css */
-/* Things to fix: login page - underline and placeholder. */
+/* Things to fix: login page - placeholder. */
 /* Things to fix: index  page - button should be left. */
 
 /* Index page changes */
@@ -53,7 +53,7 @@ main {
 #shop-now {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Add this line */
+    align-items: flex-start; 
 }
 
 .shop-now-button {
@@ -143,17 +143,13 @@ form.login-form button {
 form.login-form button:hover {
     background-color: #45A049; 
 }
-.main.login-form-section p a.signup-link {
+
+a.signup-link {
     color: #007BFF;
-    margin: 10px;
-    text-decoration: none; 
-}
-
-.main.login-form-section p a.signup-link:hover {
-    text-decoration: underline; 
-    color: #0056b3;
-}
-
-.main.login-form-section p a.signup-link-no-underline {
     text-decoration: none;
+    margin: 10px;
+}
+
+a.signup-link:hover {
+    text-decoration: underline;
 }
