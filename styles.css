@@ -1,4 +1,6 @@
 /* styles.css */
+/* Things to fix: login page - underline and placeholder. */
+/* Things to fix: index  page - button should be left. */
 
 /* Index page changes */
 header {
@@ -48,19 +50,25 @@ main {
     margin: 20px;
 }
 
+#shop-now {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Add this line */
+}
+
 .shop-now-button {
     background-color: #4CAF50;
     color: white;
+    text-align: left;
     padding: 10px;
     border-radius: 5px;
-    align-items: flex-start;
-    margin: 20px;
     text-decoration: none;
 }
 
 .shop-now-button:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 }
+
 
 .customer-reviews {
     display: flex;
@@ -119,17 +127,10 @@ form.login-form input {
     margin: 10px;
     border-radius: 5px;
 }
-
-form.login-form input#username::placeholder {
-    content: "Type in username"; 
-    color: #999; 
+form.login-form input::placeholder {
+    color: #555;
+    font-style: italic;
 }
-
-form.login-form input#password::placeholder {
-    content: "Type in password"; 
-    color: #999;
-}
-
 
 form.login-form button {
     background-color: #4CAF50;
@@ -142,14 +143,17 @@ form.login-form button {
 form.login-form button:hover {
     background-color: #45A049; 
 }
-
-p a.signup-link {
+.main.login-form-section p a.signup-link {
     color: #007BFF;
     margin: 10px;
     text-decoration: none; 
 }
 
-p a.signup-link:hover {
+.main.login-form-section p a.signup-link:hover {
     text-decoration: underline; 
     color: #0056b3;
+}
+
+.main.login-form-section p a.signup-link-no-underline {
+    text-decoration: none;
 }
