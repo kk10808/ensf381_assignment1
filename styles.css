@@ -224,7 +224,6 @@ form input {
     border-radius: 5px;
 }
 
-/* Placeholder Text Styles */
 .signup-form input::placeholder {
     color: #888;
 }
@@ -246,17 +245,17 @@ form input {
 }
 
 .message-box-container {
-    border: 2px solid #000; /* 2px border */
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 10px; /* 10px padding inside the container */
-    margin: 20px; /* 20px margin around the container */
+    border: 2px #f9f9f9;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 0 auto 20px;
     text-align: center;
-    display: none; /* Initially hidden */
+    display: none;
+    width: 80%; 
 }
 
-.message-text {
-    color: #000; /* Black text color */
-    font-weight: bold;
-}
+
+
+
 
 
