@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sign Up - Timeless Trinket Treasures</title>
-
-
 </head>
 
 <body>
@@ -31,14 +29,13 @@
     </nav>
 
     <main>
-<!-- Add the following div element for displaying error messages -->
-<div id="messageBox" class="message-box-container">
-    <p id="messageText" class="message-text"></p>
-</div>
-
+        <!-- Add the following div element for displaying error messages -->
+        <div id="messageBox" class="message-box-container">
+            <p id="messageText" class="message-text"></p>
+        </div>
 
         <section class="signup-form">
-            <form action="#" method="post" onsubmit="return validateSignup();">
+            <form id="signupForm" action="#" method="post" onsubmit="return validateSignup();">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required placeholder="Enter your username">
 
@@ -60,6 +57,8 @@
     <footer class="footer">
         <p>&copy; 2024 TIMELESS TRINKET AND TREASURES. All Rights Reserved</p>
     </footer>
+
+    <script src="validate.js"></script>
 </body>
 
 </html>

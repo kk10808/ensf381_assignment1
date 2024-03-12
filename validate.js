@@ -1,78 +1,72 @@
-// validate.js
-
 function validateSignup() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
     const email = document.getElementById('email').value;
 
-    // Validate username
+    let errorMessages = '';
+
     if (!isValidUsername(username)) {
-        displayErrorMessage('Check the Username.');
-        return false;
+        errorMessages += 'Check the Username.<br>';
     }
 
-    // Validate password
     if (!isValidPassword(password)) {
-        displayErrorMessage('Check the Password.');
-        return false;
+        errorMessages += 'Check the Password.<br>';
     }
 
-    // Validate confirm password
+
     if (password !== confirmPassword) {
-        displayErrorMessage("Password doesn't match.");
-        return false;
+        errorMessages += "Password doesn't match.<br>";
     }
 
-    // Validate email
     if (!isValidEmail(email)) {
-        displayErrorMessage('Check the Email.');
-        return false;
+        errorMessages += 'Check the Email.<br>';
+    }
+    // adds all the errormessages and displays them together. 
+    if (errorMessages !== '') {
+        displayErrorMessage(errorMessages);
+        return false; 
     }
 
-    // If all validations pass, show success message
-    displaySuccessMessage('Signup successful!');
-
-    // You can submit the form or perform other actions here
+    // otherwise it says that it is successful 
+    displaySuccessMessage('Signup was successful!!');
     return true;
 }
 
+//shows the message 
 function displayErrorMessage(message) {
     const messageText = document.getElementById('messageText');
-    messageText.textContent = message;
-    document.getElementById('messageBox').style.backgroundColor = '#f2dede'; // Light red background for error
-    document.getElementById('messageBox').style.display = 'block'; // Show the message box
+    messageText.innerHTML = message; 
+    document.getElementById('messageBox').style.display = 'block'; 
 }
 
+//shows the message
 function displaySuccessMessage(message) {
     const messageText = document.getElementById('messageText');
     messageText.textContent = message;
-    document.getElementById('messageBox').style.backgroundColor = '#d4edda'; // Light green background for success
-    document.getElementById('messageBox').style.display = 'block'; // Show the message box
+    document.getElementById('messageBox').style.display = 'block'; 
 }
 
+// Function to validate a username
 function isValidUsername(username) {
-    // Must be between 3 and 20 characters long
-    // Allowed characters: alphanumeric characters (letters A-Z, numbers 0-9), hyphens (-), and underscores (_)
-    // Must start with a letter
-    // Cannot contain spaces or special characters other than hyphens and underscores
-    const usernameRegex = /^[A-Za-z][A-Za-z0-9_-]{2,19}$/;
-    return usernameRegex.test(username);
+    return /^[A-Za-z]/.test(username) && username.length >= 3 && username.length <= 20;
 }
 
+// Function to validate a password
 function isValidPassword(password) {
-    // Must be at least 8 characters long
-    // Must contain at least one uppercase letter, one lowercase letter, one number, and one special character
-    // Allowed special characters: !@#$%^&*()-_=+[]{}|;:'",.<>?/`~
-    // Cannot contain spaces
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    return passwordRegex.test(password);
+    const hasLowercase = /[a-z]/.test(password);
+    const hasUppercase = /[A-Z]/.test(password);
+    const hasDigit = /\d/.test(password);
+    const hasSpecialChar = /[@$!%*?&]/.test(password);
+
+    return hasLowercase && hasUppercase && hasDigit && hasSpecialChar && password.length >= 8;
 }
 
+// Function to validate an email address
 function isValidEmail(email) {
-    // Must be a valid email address format (e.g., username@example.com)
-    // Cannot contain spaces
-    // Must contain an "@" symbol followed by a domain name (.com, .net, .io)
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailRegex.test(email);
+    const hasAtSymbol = email.includes('@');
+    const hasDot = email.includes('.');
+
+    return hasAtSymbol && hasDot;
 }
+
