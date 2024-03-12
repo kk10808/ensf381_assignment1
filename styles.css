@@ -199,15 +199,64 @@ form input {
 }
 
 /* Signup Link Styles */
-.signup-link {
-    color: #007BFF;
-    text-decoration: none;
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Field Styles */
+.signup-form label {
+    display: block;
     margin: 10px;
 }
 
-.signup-link:hover {
-    text-decoration: underline;
+.signup-form input {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+/* Placeholder Text Styles */
+.signup-form input::placeholder {
+    color: #888;
+}
+/* Signup Button Styles */
+.signup-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.signup-btn:hover {
+    background-color: #45A049;
+    opacity: 1.0;
+}
+
+.message-box-container {
+    border: 2px solid #000; /* 2px border */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 10px; /* 10px padding inside the container */
+    margin: 20px; /* 20px margin around the container */
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.message-text {
+    color: #000; /* Black text color */
+    font-weight: bold;
+}
 
 
