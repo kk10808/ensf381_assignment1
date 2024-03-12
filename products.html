@@ -1,139 +1,119 @@
+<!-- products.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>Timeless Trinket Treasures</title>
+    <title>Products - Timeless Trinket Treasures</title>
 </head>
-
 <body>
-
+    <!-- Header Section -->
     <header class="header">
         <div class="logo">
-			<!-- Logo has been designed by LOGO.com -->
-            <img src="logo.png" alt="Company Logo" width = "300">
+            <img src="logo.png" alt="Company Logo">
         </div>
-        <h1 >Timeless Trinket Treasures</h1>
+        <div class="company-name">
+            Timeless Trinket Treasures
+        </div>
     </header>
 
-    <div>
-        <nav style="text-align: center;" >
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </div>
-
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a> 
+    </nav>
+    
     <main>
         <section class="product-list">
-			<!-- Product Images have been collected by google search -->
+
             <!-- Display Product 1 and Product 2 in the same line -->
-            <table>
-				<tr>
-					<td>
-						<div class="product">
-						<img src="ring.png" alt="Product 1" height="250">
-						<h2>Nature's Radiant Diamond Harmony Ring</h2>
-						<p class="price">$62,595</p>
-						<button>Add to Cart</button>
-						</div> 
-					</td>
-					<td>
-						<div class="product">
-						<img src="earring.png" alt="Product 2" height="250">
-						<h2>Gilded Horizon Diamond Hoop Earrings</h2>
-						<p class="price">$56,750</p>
-						<button>Add to Cart</button>
-						</div>
-					</td>
-				</tr>
-				<!-- Display Product 3 and Product 4 in the same line -->
-				<tr>
-					<td>
-						<div class="product">
-						<img src="crown.png" alt="Product 3" height="250">
-						<h2>Royal Glimmer Tiara: Gold Crown with Diamond Adornments</h2>
-						<p class="price">$98,285</p>
-						<button>Add to Cart</button>
-						</div> 
-					</td>
-					<td>
-						<div class="product">
-						<img src="bulgari.png" alt="Product 4" height="250">
-						<h2>Serpent's Glisten Golden Diamond Bracelet</h2>
-						<p class="price">$80,545</p>
-						<button>Add to Cart</button>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="product">
-						<img src="bracelet.png" alt="Product 5" height="250">
-						<h2>Dazzling Mosaic Brilliance Bracelet</h2>
-						<p class="price">$74,950</p>
-						<button>Add to Cart</button>
-						</div> 
-					</td>
-					<td>
-						<div class="product">
-						<img src="neck.png" alt="Product 6" height="250">
-						<h2>Golden Lumina Diamond Pendant Necklace</h2>
-						<p class="price">$78,455</p>
-						<button>Add to Cart</button>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="product">
-						<img src="watch.png" alt="Product 7" height="250">
-						<h2>Radiant Aurum Elegance Watch</h2>
-						<p class="price">$88,255</p>
-						<button>Add to Cart</button>
-						</div> 
-					</td>
-					<td>
-						<div class="product">
-						<img src="necklace.png" alt="Product 8" height="250">
-						<h2>Diamond Halo Elegance Necklace</h2>
-						<p class="price">$29,450</p>
-						<button>Add to Cart</button>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="product">
-						<img src="ring2.png" alt="Product 9" height="250">
-						<h2>Sunlit Sparkle Brilliance Ring</h2>
-						<p class="price">$68,155</p>
-						<button>Add to Cart</button>
-						</div> 
-					</td>
-					<td>
-						<div class="product">
-						<img src="leaf.png" alt="Product 10" height="250">
-						<h2>Gilded Botanical Whispers Earrings</h2>
-						<p class="price">$108,250</p>
-						<button>Add to Cart</button>
-						</div>
-					</td>
-				</tr>
-            </table>
+            <div class="product-container">
+                <div class="product">
+                    <img src="ring.jpg" alt="Product 1" height="250">
+                    <h2>Nature's Radiant Diamond Harmony Ring</h2>
+                    <p class="price">$62,595</p>
+                    <button>Add to Cart</button>
+                </div>    
+                <div class="product">
+					<img src="earring.jpg" alt="Product 2" height="250">
+					<h2>Gilded Horizon Diamond Hoop Earrings</h2>
+					<p class="price">$56,750</p>
+					<button>Add to Cart</button>
+				</div>
+            </div>
+
+            <!-- Display Product 3 and Product 4 in the same line -->
+            <div class="product-container">
+                <div class="product">
+                    <img src="crown.jpg" alt="Product 3" height="250">
+                    <h2>Royal Glimmer Tiara: Gold Crown with Diamond Adornments</h2>
+                    <p class="price">$98,285</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="bulgari.jpg" alt="Product 4" height="250">
+                    <h2>Serpent's Glisten Golden Diamond Bracelet</h2>
+                    <p class="price">$80,545</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <!-- Similarly create Product 5-8 -->
+            <div class="product-container">
+                <div class="product">
+                    <img src="bracelet.jpg" alt="Product 5" height="250">
+                    <h2>Dazzling Mosaic Brilliance Bracelet</h2>
+                    <p class="price">$74,950</p>
+                    <button>Add to Cart</button>
+                </div>    
+                <div class="product">
+                    <img src="neck.jpg" alt="Product 6" height="250">
+                    <h2>Golden Lumina Diamond Pendant Necklace</h2>
+                    <p class="price">$78,455</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
             
+            <div class="product-container">
+                <div class="product">
+                    <img src="watch.jpg" alt="Product 7" height="250">
+                    <h2>Radiant Aurum Elegance Watch</h2>
+                    <p class="price">$88,255</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="necklace.jpg" alt="Product 8" height="250">
+                    <h2>Diamond Halo Elegance Necklace</h2>
+                    <p class="price">$29,450</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product">
+                    <img src="ring2.jpg" alt="Product 9" height="250">
+                    <h2>Sunlit Sparkle Brilliance Ring</h2>
+                    <p class="price">$68,155</p>
+                    <button>Add to Cart</button>
+                </div> 
+                <div class="product">
+                    <img src="leaf.jpg" alt="Product 10" height="250">
+                    <h2>Gilded Botanical Whispers Earrings</h2>
+                    <p class="price">$108,250</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
         </section>
     </main>
-
+    
     <footer class="footer">
         <p>&copy; 2024 TIMELESS TRINKET AND TREASURES. All Rights Reserved</p>
     </footer>
-
 </body>
-
 </html>

@@ -1,52 +1,48 @@
-<!--Login Page-->
+<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
-    
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Timeless Trinket Treasures</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Login - Timeless Trinket Treasures</title>
 </head>
-
 <body>
-
-    <header>
-        <img src ="logo.png " alt =" Logo " width="300" >
-        <h1 style="text-align: center;">Timeless Trinket Treasures</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="company-name">
+            Timeless Trinket Treasures
+        </div>
     </header>
 
-    <div style="text-align: center;">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </div>
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a> 
+    </nav>
 
-    <main class="login-form-section">
-    <form class="login-form">
-        <h2>Login Page</h2>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required placeholder="Enter your username">
+    <main>
+        <section class="login-form">
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required placeholder="Enter your username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
 
-        <button type="submit">Login</button>
-    </form>
+                <button type="submit" class="login-btn">Login</button>
+                 <p>Don't have an account? <a href="signup.html" class="signup-link">Sign up here</a>.</p>
+            </form>
+        </section>
+    </main>
 
-    
-    <p>Are you a New User? <a href="signup.html" class="signup-link">Sign up here for the latest updates and sales!</a></p>
-</main>
-
-
-    <footer style="text-align: center;">
+    <footer class="footer">
         <p>&copy; 2024 TIMELESS TRINKET AND TREASURES All Rights Reserved</p>
     </footer>
-
 </body>
-
 </html>

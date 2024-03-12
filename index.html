@@ -1,95 +1,72 @@
-<!--
-=========================================================
-Name        : index.html
-Assignment  : Assignment 1 
-Group       : L03, 18
-Authors     : Keerthana Krishnan, Raghav Adlakha
-UCID        : 30175875, 30192109
-Submission  : February 5, 2024
-=========================================================
--->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Timeless Trinket Treasures</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Timeless Trinket Treasures</title>
 </head>
-
 <body>
-
+    <!-- Header Section -->
     <header class="header">
         <div class="logo">
-			<!-- Logo has been designed by LOGO.com -->
-            <img src="logo.png" alt="Company Logo" width = "300">
+            <img src="logo.png" alt="Company Logo">
         </div>
-        <h1 >Timeless Trinket Treasures</h1>
+        <div class="company-name">
+            Timeless Trinket Treasures
+        </div>
     </header>
 
-    <div style="text-align: center;">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </div>
-    <p style="text-align: center;" >Elegance Unveiled, Hand-Crafted Brilliance Forever.</p>
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a> 
+    </nav>
+
     <main>
         <!-- About Us Section -->
-        <section id="about-us" class="about-us">
-            <h1>About Us</h1>
+        <section class="about-us">
+            <h2>About Us</h2>
             <p>Welcome to Timeless Trinket and Treasures, where craftsmanship meets elegance. Our company was started in 2020 when we decided to share personalized jewelry with the rest of the world. Every product in our store is hand-crafted with love and gold. It is unique and personalized to each buyer. We want to redefine luxury and quality with our products that last a lifetime.</p>
         </section>
 
-         <!-- Mission Statement Section -->
-         <section id="mission-statement" class="mission-statement">
-            <h2>Our Mission Statement</h2>
-            <p>Empowering Individual Stories through Handcrafted Excellence: Our mission is to meticulously handcraft exceptional jewelry that transcends mass production. We believe in the power of unique expressions, and our dedication is to offer an intimate experience, showcasing the artistry and devotion behind every piece. By doing so, we aim to empower our customers, providing them with distinct, handcrafted treasures that become a tangible extension of their personal narratives.</p>
+        <!-- Shop Now Button -->
+        <section class="shop-now">
+            <a href="products.html"><button class="shop-now-btn">Shop Now</button></a>
         </section>
 
-         <!-- Vision Statement Section -->
-         <section id="vision-statement" class="vision-statement">
-             <h2>Our Vision</h2>
-             <p>To be the global standard for personalized luxury, Timeless Trinket and Treasures envisions a future where our hand-crafted jewelry, infused with love and luxury, becomes one with ever lasting elegance. We aspire to redefine the boundaries of quality, crafting unique and personalized treasures that not only reflect the stories of our customers but stand the test of time, creating a legacy that lasts for generations.</p>
-         </section>
-        
-
-        <!-- Shop Now Section -->
-        <section id="shop-now" class="shop-now">
-            <h2>    Shop Now</h2>
-            <!-- Shop Now Button (as a link to the Products page) -->
-            <a href="products.html" class="shop-now-button">Explore Our Collections</a>
-        </section>
-
-        <!-- Customer Reviews/Testimonials Section -->
-        <section id="customer-reviews" class="customer-reviews">
+        <!-- Customer Reviews Section -->
+        <section class="customer-reviews">
             <h2>Customer Reviews</h2>
-            <!-- Karmine's Review -->
+
+            <!-- Review 1 -->
             <div class="review">
-                <p>Karmine K: “I bought their Radiance 20 carat hand-crafted necklace last year. It was single-handedly the best decision I have ever made in my life other than quitting my job two years ago. I wear the necklace every day and it still hasn't lost its glow or its quality. It does not have a single scratch on it. Would totally recommend it!!”</p>
-            </div>
-            
-            <!-- Sawyer's Review -->
-            <div class="review">
-                <p>Sawyer: “I bought their Infiniti Radiance 18 carat hand-crafted band two months ago and I love it. I wear it everywhere and it is sturdy and still hasn't lost its shine in that time.”</p>
+                <p>
+					<span class="customer-name">Karmine K:</span>
+                    "I bought their Radiance 20 carat hand-crafted necklace last year. It was single-handedly the best decision I have ever made in my life other than quitting my job two years ago. I wear the necklace every day and it still hasn't lost its glow or its quality. It does not have a single scratch on it. Would totally recommend it!!"
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
             </div>
 
-            <!-- Jenn's Review -->
+            <!-- Review 2 -->
             <div class="review">
-                 <p>Jenn Berry: “I purchased the Serpent's Glisten Golden Diamond Bracelet and I was surprised at the weight of the bracelet when I first opened it. I'm hopeful these will be great for a long time! This is a really nice design and it fits my wrist well.   ”</p>
+                <p>
+					<span class="customer-name">Sawyer:</span>
+                    "I bought their Infiniti Radiance 18 carat hand-crafted band two months ago and I love it. I wear it everywhere and it is sturdy and still hasn't lost its shine in that time."
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
             </div>
+
+            <!-- Add more reviews as needed -->
         </section>
     </main>
 
-    <footer style="text-align: center;">
-        <!-- Copyright notice goes here -->
-
+    <!-- Footer Section -->
+    <footer class="footer">
         <p>&copy; 2024 TIMELESS TRINKET AND TREASURES All Rights Reserved</p>
     </footer>
-
 </body>
 </html>
