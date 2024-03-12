@@ -47,17 +47,26 @@ function displaySuccessMessage(message) {
     document.getElementById('messageBox').style.display = 'block'; 
 }
 
+// Function to validate a username
 function isValidUsername(username) {
-    const usernameRegex = /^[A-Za-z][A-Za-z0-9_-]{2,19}$/;
-    return usernameRegex.test(username);
+    return /^[A-Za-z]/.test(username) && username.length >= 3 && username.length <= 20;
 }
 
+// Function to validate a password
 function isValidPassword(password) {
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    return passwordRegex.test(password);
+    const hasLowercase = /[a-z]/.test(password);
+    const hasUppercase = /[A-Z]/.test(password);
+    const hasDigit = /\d/.test(password);
+    const hasSpecialChar = /[@$!%*?&]/.test(password);
+
+    return hasLowercase && hasUppercase && hasDigit && hasSpecialChar && password.length >= 8;
 }
 
+// Function to validate an email address
 function isValidEmail(email) {
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailRegex.test(email);
+    const hasAtSymbol = email.includes('@');
+    const hasDot = email.includes('.');
+
+    return hasAtSymbol && hasDot;
 }
+
