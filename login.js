@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!messageBox) {
             messageBox = document.createElement("div");
             messageBox.id = "message-box";
-            document.querySelector(".login-form").appendChild(messageBox);
+            loginForm.appendChild(messageBox);
         }
 
         var messageParagraph = document.createElement("p");
